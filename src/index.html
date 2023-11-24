@@ -15,11 +15,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../dist/output.css" />
-    <link rel="stylesheet" href="../dist/styles.css" />
+
     <title>Frontend Mentor | Skilled e-learning landing page</title>
   </head>
   <body class="px-4 pt-4">
-    <header class="flex justify-between items-center">
+    <header class="flex justify-between items-center mb-10">
       <div><img src="../assets/logo-dark.svg" alt="skill company logo" /></div>
       <div>
         <button
@@ -29,15 +29,44 @@
         </button>
       </div>
     </header>
+    <main>
+      <section class="mb-16">
+        <h1 class="text-4xl font-extrabold text-blueSky mb-6">
+          Maximize skill, minimize budget
+        </h1>
+        <p class="text-deppressedElephant font-medium leading-6 mb-6">
+          Our modern courses across a range of in-demand skills will give you
+          the knowledge you need to live the life you want.
+        </p>
+        <button
+          class="bg-gradient-to-b from-btn2IdleStart to-btn2IdleEnd text-white px-9 py-4 rounded-3xl"
+        >
+          Get Started
+        </button>
+      </section>
+      <section>
+        <div>
+          <img
+            class="mx-auto w-full"
+            src="../assets/image-hero-mobile.webp"
+            alt="A focused woman sipping coffee while studying a web development course online"
+            sizes="(max-width: 768px) 100vw"
+            srcset="
+              ../assets/image-hero-mobile.webp    1x,
+              ../assets/image-hero-mobile@2x.webp 2x
+            "
+          />
+        </div>
+      </section>
+    </main>
     <!--
 
 
-  Maximize skill, minimize budget
+  
 
-  Our modern courses across a range of in-demand skills will give you the
-  knowledge you need to live the life you want.
+  
 
-  Get Started
+ 
 
   Check out our most popular courses!
 

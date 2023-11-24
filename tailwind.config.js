@@ -6,11 +6,16 @@ module.exports = {
       sans: ["Lato", "ui-sans-serif"],
       serif: ["Arvo", "ui-serif"],
     },
-    colors: {
-      deppressedElephant: "#666CA3",
-      blueSky: "#13183F",
+
+    extend: {
+      colors: {
+        deppressedElephant: "#666CA3",
+        blueSky: "#13183F",
+        yerg: "#83869A",
+        btn2IdleStart: "#FF6F48",
+        btn2IdleEnd: "#F02AA6",
+      },
     },
-    extend: {},
   },
   plugins: [],
 };
