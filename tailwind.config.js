@@ -2,12 +2,15 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {
-      fontFamily: {
-        arvo: ["Arvo", "serif"],
-        lato: ["Lato", "sans-serif"],
-      },
+    fontFamily: {
+      sans: ["Lato", "ui-sans-serif"],
+      serif: ["Arvo", "ui-serif"],
     },
+    colors: {
+      deppressedElephant: "#666CA3",
+      blueSky: "#13183F",
+    },
+    extend: {},
   },
   plugins: [],
 };
