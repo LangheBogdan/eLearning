@@ -30,34 +30,58 @@
       </div>
     </header>
     <main>
-      <section class="mb-16">
-        <h1 class="text-4xl font-extrabold text-blueSky mb-6">
-          Maximize skill, minimize budget
-        </h1>
-        <p class="text-deppressedElephant font-medium leading-6 mb-6">
-          Our modern courses across a range of in-demand skills will give you
-          the knowledge you need to live the life you want.
-        </p>
-        <button
-          class="bg-gradient-to-b from-btn2IdleStart to-btn2IdleEnd text-white px-9 py-4 rounded-3xl"
-        >
-          Get Started
-        </button>
-      </section>
-      <section>
-        <div>
-          <img
-            class="mx-auto w-full"
-            src="./assets/image-hero-mobile.webp"
-            alt="A focused woman sipping coffee while studying a web development course online"
-            sizes="(max-width: 768px) 100vw"
-            srcset="
-              ./assets/image-hero-mobile.webp    1x,
-              ./assets/image-hero-mobile@2x.webp 2x
-            "
-          />
-        </div>
-      </section>
+      <div class="">
+        <section class="mb-16">
+          <h1 class="text-4xl font-extrabold text-blueSky mb-6">
+            Maximize skill, minimize budget
+          </h1>
+          <p class="text-deppressedElephant font-medium leading-6 mb-6">
+            Our modern courses across a range of in-demand skills will give you
+            the knowledge you need to live the life you want.
+          </p>
+          <button
+            class="bg-gradient-to-b from-btn2IdleStart to-btn2IdleEnd text-white px-9 py-4 rounded-3xl"
+          >
+            Get Started
+          </button>
+        </section>
+        <section>
+          <div>
+            <picture>
+              <!-- High-res desktop images for screens wider than 1024px -->
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./assets/image-hero-desktop@2x.webp 2x,
+                  ./assets/image-hero-desktop.webp
+                "
+              />
+              <!-- High-res tablet images for screens between 768px and 1024px -->
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="
+                  ./assets/image-hero-tablet@2x.webp 2x,
+                  ./assets/image-hero-tablet.webp    1x
+                "
+              />
+              <!-- High-res mobile images for screens smaller than 768px -->
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./assets/image-hero-mobile@2x.webp 2x,
+                  ./assets/image-hero-mobile.webp    1x
+                "
+              />
+              <!-- Fallback for browsers that do not support picture element -->
+              <img
+                src="./assets/image-hero-mobile.webp"
+                alt="A focused woman sipping coffee while studying a web development course online"
+                class=""
+              />
+            </picture>
+          </div>
+        </section>
+      </div>
     </main>
     <!--
 
