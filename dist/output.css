@@ -550,8 +550,12 @@ video {
   display: flex;
 }
 
-.w-full {
-  width: 100%;
+.grow {
+  flex-grow: 1;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -562,6 +566,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -569,6 +577,11 @@ video {
 .bg-blueSky {
   --tw-bg-opacity: 1;
   background-color: rgb(19 24 63 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -581,13 +594,29 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-btn3IdleStart {
+  --tw-gradient-from: #4851FF var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(72 81 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-sectionGradientStart {
+  --tw-gradient-from: #FFF var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-btn2IdleEnd {
   --tw-gradient-to: #F02AA6 var(--tw-gradient-to-position);
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.to-sectionGradientEnd {
+  --tw-gradient-to: #F0F1FF var(--tw-gradient-to-position);
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-6 {
@@ -608,6 +637,24 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-9 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .pt-4 {
