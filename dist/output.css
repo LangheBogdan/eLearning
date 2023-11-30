@@ -606,6 +606,10 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-0\% {
+  --tw-gradient-from-position: 0%;
+}
+
 .to-btn2IdleEnd {
   --tw-gradient-to: #F02AA6 var(--tw-gradient-to-position);
 }
@@ -614,14 +618,27 @@ video {
   --tw-gradient-to: #F0F1FF var(--tw-gradient-to-position);
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.to-btn3IdleEnd {
+  --tw-gradient-to: #F02AA6 var(--tw-gradient-to-position);
+}
+
+.to-100\% {
+  --tw-gradient-to-position: 100%;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .px-9 {
@@ -644,17 +661,8 @@ video {
   padding-bottom: 2.25rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .pb-20 {
   padding-bottom: 5rem;
-}
-
-.pt-1 {
-  padding-top: 0.25rem;
 }
 
 .pt-4 {
