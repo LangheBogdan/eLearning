@@ -20,6 +20,7 @@ module.exports = {
         btn3IdleEnd: "#F02AA6",
         cardGradientStart: "#FF6F48",
         cardGradientEnd: "#F02AA6",
+        cardBtn: "#F74780",
       },
       boxShadow: {
         "3xl": "0px 25px 50px 0px rgba(6, 22, 141, 0.09)",

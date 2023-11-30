@@ -534,12 +534,28 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.-top-4 {
+  top: -1rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
 
 .mb-16 {
   margin-bottom: 4rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-6 {
@@ -562,16 +578,16 @@ video {
   justify-content: space-between;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
-.rounded-2xl {
-  border-radius: 1rem;
+.gap-y-10 {
+  row-gap: 2.5rem;
 }
 
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .bg-blueSky {
@@ -679,6 +695,10 @@ video {
   padding-bottom: 2rem;
 }
 
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -703,6 +723,16 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -730,6 +760,11 @@ video {
   color: rgb(19 24 63 / var(--tw-text-opacity));
 }
 
+.text-cardBtn {
+  --tw-text-opacity: 1;
+  color: rgb(247 71 128 / var(--tw-text-opacity));
+}
+
 .text-deppressedElephant {
   --tw-text-opacity: 1;
   color: rgb(102 108 163 / var(--tw-text-opacity));
@@ -738,6 +773,16 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-btn3IdleEnd {
+  --tw-text-opacity: 1;
+  color: rgb(240 42 166 / var(--tw-text-opacity));
+}
+
+.text-cardGradientEnd {
+  --tw-text-opacity: 1;
+  color: rgb(240 42 166 / var(--tw-text-opacity));
 }
 
 .shadow-3xl {
