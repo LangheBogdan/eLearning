@@ -18,6 +18,11 @@ module.exports = {
         sectionGradientStart: "#FFF",
         btn3IdleStart: "#4851FF",
         btn3IdleEnd: "#F02AA6",
+        cardGradientStart: "#FF6F48",
+        cardGradientEnd: "#F02AA6",
+      },
+      boxShadow: {
+        "3xl": "0px 25px 50px 0px rgba(6, 22, 141, 0.09)",
       },
     },
   },

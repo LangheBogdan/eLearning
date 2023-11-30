@@ -550,10 +550,6 @@ video {
   display: flex;
 }
 
-.grow {
-  flex-grow: 1;
-}
-
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -566,8 +562,12 @@ video {
   justify-content: space-between;
 }
 
-.gap-y-4 {
-  row-gap: 1rem;
+.gap-4 {
+  gap: 1rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .rounded-3xl {
@@ -600,6 +600,12 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-cardGradientStart {
+  --tw-gradient-from: #FF6F48 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 111 72 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-sectionGradientStart {
   --tw-gradient-from: #FFF var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
@@ -614,12 +620,16 @@ video {
   --tw-gradient-to: #F02AA6 var(--tw-gradient-to-position);
 }
 
-.to-sectionGradientEnd {
-  --tw-gradient-to: #F0F1FF var(--tw-gradient-to-position);
-}
-
 .to-btn3IdleEnd {
   --tw-gradient-to: #F02AA6 var(--tw-gradient-to-position);
+}
+
+.to-cardGradientEnd {
+  --tw-gradient-to: #F02AA6 var(--tw-gradient-to-position);
+}
+
+.to-sectionGradientEnd {
+  --tw-gradient-to: #F0F1FF var(--tw-gradient-to-position);
 }
 
 .to-100\% {
@@ -665,17 +675,38 @@ video {
   padding-bottom: 5rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .font-sans {
   font-family: Lato, ui-sans-serif;
 }
 
+.font-serif {
+  font-family: Arvo, ui-serif;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-extrabold {
@@ -688,6 +719,10 @@ video {
 
 .leading-6 {
   line-height: 1.5rem;
+}
+
+.leading-8 {
+  line-height: 2rem;
 }
 
 .text-blueSky {
@@ -703,6 +738,12 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow-3xl {
+  --tw-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.09);
+  --tw-shadow-colored: 0px 25px 50px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .hover\:bg-deppressedElephant:hover {
