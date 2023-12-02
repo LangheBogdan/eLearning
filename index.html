@@ -19,181 +19,191 @@
     <title>Frontend Mentor | Skilled e-learning landing page</title>
   </head>
   <body class="pt-4">
-    <header
-      class="flex justify-between items-center mb-10 pt-4 px-4 md:pt-6 md:px-10 md:mb-[100px]"
-    >
-      <div><img src="./assets/logo-dark.svg" alt="skill company logo" /></div>
-      <div>
-        <button
-          class="font-sans py-3 px-6 bg-blueSky rounded-3xl text-white hover:bg-deppressedElephant active:bg-deppressedElephant"
-        >
-          Get Started
-        </button>
-      </div>
-    </header>
-    <main>
-      <div class="px-4 md:px-10 md:flex">
-        <section class="mb-11 md:basis-2/4">
-          <h1 class="text-4xl font-extrabold text-blueSky mb-6">
-            Maximize skill, minimize budget
-          </h1>
-          <p class="text-deppressedElephant font-medium leading-6 mb-6">
-            Our modern courses across a range of in-demand skills will give you
-            the knowledge you need to live the life you want.
-          </p>
+    <div class="md:relative overflow-hidden">
+      <header
+        class="flex justify-between items-center mb-10 pt-4 px-4 md:pt-6 md:px-10 md:mb-[100px]"
+      >
+        <div><img src="./assets/logo-dark.svg" alt="skill company logo" /></div>
+        <div>
           <button
-            class="bg-gradient-to-b from-btn2IdleStart to-btn2IdleEnd text-white px-9 py-4 rounded-3xl"
+            class="font-sans py-3 px-6 bg-blueSky rounded-3xl text-white hover:bg-deppressedElephant active:bg-deppressedElephant"
           >
             Get Started
           </button>
-        </section>
-        <section class="md:basis-2/4">
-          <div>
-            <picture>
-              <!-- High-res desktop images for screens wider than 1024px -->
-              <source
-                media="(min-width: 1024px)"
-                srcset="
-                  ./assets/image-hero-desktop@2x.webp 2x,
-                  ./assets/image-hero-desktop.webp
-                "
-              />
-              <!-- High-res tablet images for screens between 768px and 1024px -->
-              <source
-                media="(min-width: 768px) and (max-width: 1023px)"
-                srcset="
-                  ./assets/image-hero-tablet@2x.webp 2x,
-                  ./assets/image-hero-tablet.webp    1x
-                "
-              />
-              <!-- High-res mobile images for screens smaller than 768px -->
-              <source
-                media="(max-width: 767px)"
-                srcset="
-                  ./assets/image-hero-mobile@2x.webp 2x,
-                  ./assets/image-hero-mobile.webp    1x
-                "
-              />
-              <!-- Fallback for browsers that do not support picture element -->
-              <img
-                src="./assets/image-hero-mobile.webp"
-                alt="A focused woman sipping coffee while studying a web development course online"
-                class="mx-auto"
-              />
-            </picture>
-          </div>
-        </section>
-      </div>
-      <section
-        class="bg-gradient-to-b from-sectionGradientStart to-sectionGradientEnd pb-20"
-      >
-        <div class="flex flex-wrap px-4 gap-y-10 md:px-10 md:gap-y-14 md:gap-x-2">
-          <div
-            class="bg-gradient-to-b from-cardGradientStart from-0% to-cardGradientEnd to-100% text-white rounded-xl font-bold grow md:basis-[48%]"
-          >
-            <h2 class="px-7 pt-6 pb-8 font-serif text-2xl leading-8">
-              Check out our most popular courses!
-            </h2>
-          </div>
-          <div
-            class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%]"
-          >
-            <img
-              class="absolute -top-4"
-              src="assets/icon-animation.svg"
-              alt="animation card section logo"
-            />
-            <h3 class="text-blueSky text-xl font-extrabold mb-4">Animation</h3>
-            <p class="mb-6 leading-6 font-medium text-deppressedElephant">
-              Learn the latest animation techniques to create stunning motion
-              design and captivate your audience.
-            </p>
-            <button class="text-cardGradientEnd text-lg font-extrabold">
-              Get Started
-            </button>
-          </div>
-          <div
-            class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%]"
-          >
-            <img
-              class="absolute -top-4"
-              src="assets/icon-design.svg"
-              alt="design card section logo"
-            />
-            <h3 class="text-blueSky text-xl font-extrabold mb-4">Design</h3>
-            <p class="mb-6 leading-6 font-medium text-deppressedElephant">
-              Create beautiful, usable interfaces to help shape the future of
-              how the web looks.
-            </p>
-            <button class="text-cardGradientEnd text-lg font-extrabold">
-              Get Started
-            </button>
-          </div>
-          <div
-            class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%]"
-          >
-            <img
-              class="absolute -top-4"
-              src="assets/icon-photography.svg"
-              alt="photography card section logo"
-            />
-            <h3 class="text-blueSky text-xl font-extrabold mb-4">
-              Photography
-            </h3>
-            <p class="mb-6 leading-6 font-medium text-deppressedElephant">
-              Explore critical fundamentals like lighting, composition, and
-              focus to capture exceptional photos.
-            </p>
-            <button class="text-cardGradientEnd text-lg font-extrabold">
-              Get Started
-            </button>
-          </div>
-          <div
-            class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%]"
-          >
-            <img
-              class="absolute -top-4"
-              src="assets/icon-crypto.svg"
-              alt="crupto card section logo"
-            />
-            <h3 class="text-blueSky text-xl font-extrabold mb-4">Crypto</h3>
-            <p class="mb-6 leading-6 font-medium text-deppressedElephant">
-              All you need to know to get started investing in crypto. Go from
-              beginner to advanced with this 54 hour course.
-            </p>
-            <button class="text-cardGradientEnd text-lg font-extrabold">
-              Get Started
-            </button>
-          </div>
-          <div
-            class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%]"
-          >
-            <img
-              class="absolute -top-4"
-              src="assets/icon-business.svg"
-              alt="business card section logo"
-            />
-            <h3 class="text-blueSky text-xl font-extrabold mb-4">Business</h3>
-            <p class="mb-6 leading-6 font-medium text-deppressedElephant">
-              A step-by-step playbook to help you start, scale, and sustain your
-              business without outside investment.
-            </p>
-            <button class="text-cardGradientEnd text-lg font-extrabold">
-              Get Started
-            </button>
-          </div>
         </div>
-      </section>
-    </main>
-    <footer class="bg-blueSky flex justify-between items-center py-9 px-4">
-      <div><img src="assets/logo-light.svg" alt="website logo" /></div>
-      <div>
-        <button
-          class="bg-gradient-to-b from-btn3IdleStart from-0% to-btn3IdleEnd to-100% font-sans py-3 px-6 rounded-3xl text-white"
+      </header>
+      <main>
+        <div class="px-4 md:px-10 md:flex">
+          <section class="md:basis-2/4">
+            <h1 class="text-4xl font-extrabold text-blueSky mb-6">
+              Maximize skill, minimize budget
+            </h1>
+            <p class="text-deppressedElephant font-medium leading-6 mb-6">
+              Our modern courses across a range of in-demand skills will give
+              you the knowledge you need to live the life you want.
+            </p>
+            <button
+              class="bg-gradient-to-b from-btn2IdleStart to-btn2IdleEnd text-white px-9 py-4 rounded-3xl"
+            >
+              Get Started
+            </button>
+          </section>
+          <section>
+            <div
+              class="md:absolute md:w-[600px] md:h-[600px] md:-right-[250px] md:-top-[77px]"
+            >
+              <picture>
+                <!-- High-res desktop images for screens wider than 1024px -->
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="
+                    ./assets/image-hero-desktop@2x.webp 2x,
+                    ./assets/image-hero-desktop.webp
+                  "
+                />
+                <!-- High-res tablet images for screens between 768px and 1024px -->
+                <source
+                  media="(min-width: 768px) and (max-width: 1023px)"
+                  srcset="
+                    ./assets/image-hero-tablet@2x.webp 2x,
+                    ./assets/image-hero-tablet.webp    1x
+                  "
+                />
+                <!-- High-res mobile images for screens smaller than 768px -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./assets/image-hero-mobile@2x.webp 2x,
+                    ./assets/image-hero-mobile.webp    1x
+                  "
+                />
+                <!-- Fallback for browsers that do not support picture element -->
+                <img
+                  src="./assets/image-hero-mobile.webp"
+                  alt="A focused woman sipping coffee while studying a web development course online"
+                  class="mx-auto"
+                />
+              </picture>
+            </div>
+          </section>
+        </div>
+        <section
+          class="bg-gradient-to-b from-sectionGradientStart to-sectionGradientEnd pb-20 md:mt-[200px]"
         >
-          Get Started
-        </button>
-      </div>
-    </footer>
+          <div
+            class="flex flex-wrap px-4 gap-y-10 md:px-10 md:gap-y-14 md:gap-x-2"
+          >
+            <div
+              class="bg-gradient-to-b from-cardGradientStart from-0% to-cardGradientEnd to-100% text-white rounded-xl font-bold grow md:basis-[48%]"
+            >
+              <h2 class="px-7 pt-6 pb-8 font-serif text-2xl leading-8">
+                Check out our most popular courses!
+              </h2>
+            </div>
+            <div
+              class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%]"
+            >
+              <img
+                class="absolute -top-4"
+                src="assets/icon-animation.svg"
+                alt="animation card section logo"
+              />
+              <h3 class="text-blueSky text-xl font-extrabold mb-4">
+                Animation
+              </h3>
+              <p class="mb-6 leading-6 font-medium text-deppressedElephant">
+                Learn the latest animation techniques to create stunning motion
+                design and captivate your audience.
+              </p>
+              <button class="text-cardGradientEnd text-lg font-extrabold">
+                Get Started
+              </button>
+            </div>
+            <div
+              class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%]"
+            >
+              <img
+                class="absolute -top-4"
+                src="assets/icon-design.svg"
+                alt="design card section logo"
+              />
+              <h3 class="text-blueSky text-xl font-extrabold mb-4">Design</h3>
+              <p class="mb-6 leading-6 font-medium text-deppressedElephant">
+                Create beautiful, usable interfaces to help shape the future of
+                how the web looks.
+              </p>
+              <button class="text-cardGradientEnd text-lg font-extrabold">
+                Get Started
+              </button>
+            </div>
+            <div
+              class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%]"
+            >
+              <img
+                class="absolute -top-4"
+                src="assets/icon-photography.svg"
+                alt="photography card section logo"
+              />
+              <h3 class="text-blueSky text-xl font-extrabold mb-4">
+                Photography
+              </h3>
+              <p class="mb-6 leading-6 font-medium text-deppressedElephant">
+                Explore critical fundamentals like lighting, composition, and
+                focus to capture exceptional photos.
+              </p>
+              <button class="text-cardGradientEnd text-lg font-extrabold">
+                Get Started
+              </button>
+            </div>
+            <div
+              class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%]"
+            >
+              <img
+                class="absolute -top-4"
+                src="assets/icon-crypto.svg"
+                alt="crupto card section logo"
+              />
+              <h3 class="text-blueSky text-xl font-extrabold mb-4">Crypto</h3>
+              <p class="mb-6 leading-6 font-medium text-deppressedElephant">
+                All you need to know to get started investing in crypto. Go from
+                beginner to advanced with this 54 hour course.
+              </p>
+              <button class="text-cardGradientEnd text-lg font-extrabold">
+                Get Started
+              </button>
+            </div>
+            <div
+              class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%]"
+            >
+              <img
+                class="absolute -top-4"
+                src="assets/icon-business.svg"
+                alt="business card section logo"
+              />
+              <h3 class="text-blueSky text-xl font-extrabold mb-4">Business</h3>
+              <p class="mb-6 leading-6 font-medium text-deppressedElephant">
+                A step-by-step playbook to help you start, scale, and sustain
+                your business without outside investment.
+              </p>
+              <button class="text-cardGradientEnd text-lg font-extrabold">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer
+        class="bg-blueSky flex justify-between items-center py-9 px-4 md:px-10"
+      >
+        <div><img src="assets/logo-light.svg" alt="website logo" /></div>
+        <div>
+          <button
+            class="bg-gradient-to-b from-btn3IdleStart from-0% to-btn3IdleEnd to-100% font-sans py-3 px-6 rounded-3xl text-white"
+          >
+            Get Started
+          </button>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
