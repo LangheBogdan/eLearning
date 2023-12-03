@@ -21,7 +21,7 @@
   <body class="pt-4">
     <div class="md:relative overflow-hidden">
       <header
-        class="flex justify-between items-center mb-10 pt-4 px-4 md:pt-6 md:px-10 md:mb-[100px]"
+        class="flex justify-between items-center mb-10 pt-4 px-4 md:pt-6 md:px-10 md:mb-[100px] lg:w-4/5 mx-auto"
       >
         <div><img src="./assets/logo-dark.svg" alt="skill company logo" /></div>
         <div>
@@ -33,8 +33,8 @@
         </div>
       </header>
       <main>
-        <div class="px-4 md:px-10 md:flex">
-          <section class="md:basis-2/4">
+        <div class="px-4 md:px-10 md:flex lg:w-4/5 mx-auto">
+          <section class="md:basis-2/4 lg:basis-[350px]">
             <h1 class="text-4xl font-extrabold text-blueSky mb-6">
               Maximize skill, minimize budget
             </h1>
@@ -50,7 +50,7 @@
           </section>
           <section>
             <div
-              class="md:absolute md:w-[600px] md:h-[600px] md:-right-[250px] md:-top-[77px]"
+              class="md:absolute md:w-[600px] md:h-[600px] md:-right-[250px] md:-top-[77px] lg:-right-[190px] lg:-top-4"
             >
               <picture>
                 <!-- High-res desktop images for screens wider than 1024px -->
@@ -88,20 +88,20 @@
           </section>
         </div>
         <section
-          class="bg-gradient-to-b from-sectionGradientStart to-sectionGradientEnd pb-20 md:mt-[200px]"
+          class="bg-gradient-to-b from-sectionGradientStart to-sectionGradientEnd pb-20 md:mt-[200px] lg:mt-[150px]"
         >
           <div
-            class="flex flex-wrap px-4 gap-y-10 md:px-10 md:gap-y-14 md:gap-x-2"
+            class="flex flex-wrap px-4 gap-y-10 md:px-10 md:gap-y-14 md:gap-x-2 lg:w-4/5 lg:mx-auto lg:gap-x-7 lg:gap-y-20"
           >
             <div
-              class="bg-gradient-to-b from-cardGradientStart from-0% to-cardGradientEnd to-100% text-white rounded-xl font-bold grow md:basis-[48%]"
+              class="bg-gradient-to-b from-cardGradientStart from-0% to-cardGradientEnd to-100% text-white rounded-xl font-bold grow md:basis-[48%] lg:basis-[30%]"
             >
               <h2 class="px-7 pt-6 pb-8 font-serif text-2xl leading-8">
                 Check out our most popular courses!
               </h2>
             </div>
             <div
-              class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%]"
+              class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%] lg:basis-[30%]"
             >
               <img
                 class="absolute -top-4"
@@ -120,7 +120,7 @@
               </button>
             </div>
             <div
-              class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%]"
+              class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%] lg:basis-[30%]"
             >
               <img
                 class="absolute -top-4"
@@ -137,7 +137,7 @@
               </button>
             </div>
             <div
-              class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%]"
+              class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%] lg:basis-[30%]"
             >
               <img
                 class="absolute -top-4"
@@ -156,7 +156,7 @@
               </button>
             </div>
             <div
-              class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%]"
+              class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%] lg:basis-[30%]"
             >
               <img
                 class="absolute -top-4"
@@ -173,7 +173,7 @@
               </button>
             </div>
             <div
-              class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%]"
+              class="bg-white shadow-3xl rounded-xl pt-14 px-7 pb-8 relative grow md:basis-[48%] lg:basis-[30%]"
             >
               <img
                 class="absolute -top-4"
@@ -192,18 +192,18 @@
           </div>
         </section>
       </main>
-      <footer
-        class="bg-blueSky flex justify-between items-center py-9 px-4 md:px-10"
-      >
-        <div><img src="assets/logo-light.svg" alt="website logo" /></div>
-        <div>
-          <button
-            class="bg-gradient-to-b from-btn3IdleStart from-0% to-btn3IdleEnd to-100% font-sans py-3 px-6 rounded-3xl text-white"
-          >
-            Get Started
-          </button>
-        </div>
-      </footer>
+      <div class="bg-blueSky py-9 px-4 md:px-10">
+        <footer class="flex justify-between items-center lg:w-4/5 lg:mx-auto">
+          <div><img src="assets/logo-light.svg" alt="website logo" /></div>
+          <div>
+            <button
+              class="bg-gradient-to-b from-btn3IdleStart from-0% to-btn3IdleEnd to-100% font-sans py-3 px-6 rounded-3xl text-white"
+            >
+              Get Started
+            </button>
+          </div>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
